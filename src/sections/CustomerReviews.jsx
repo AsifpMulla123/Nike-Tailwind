@@ -16,9 +16,10 @@ const CustomerReviews = () => {
         {reviews.map((review) => (
           <ReviewCard
             key={review.customerName}
-            imgURL={review.imgURL}
-            rating={review.rating}
-            feedback={review.feedback}
+            // imgURL={review.imgURL}
+            // rating={review.rating}
+            // feedback={review.feedback}
+            {...review}
           />
         ))}
       </div>
